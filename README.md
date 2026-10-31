@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="public/logo.png" alt="Academy Remember" width="180" />
 
-First, run the development server:
+# Academy Remember
+
+**Aprende. Organiza. Avanza.**
+
+Inscripción, pagos y guías en un solo lugar.
+
+</div>
+
+---
+
+## La idea
+
+Estudiar no debería sentirse como perseguir papeles por toda la escuela.
+
+**Academy Remember** es una app móvil pensada para que estudiantes de básica, bachillerato y universidad tengan todo su mundo académico en un mismo lugar: registrarse, elegir su nivel, acceder a guías de estudio y gestionar su plan, sin saltar entre mil plataformas.
+
+Nuestra meta es simple y ambiciosa: **que recordar lo que aprendes sea tan fácil como entrar a la app.**
+
+## Qué encontrarás hoy
+
+- 🎓 **Bienvenida** con la propuesta de valor de la app.
+- 📝 **Registro inteligente** que se adapta a tu nivel (grado, año o carrera).
+- 🔐 **Inicio de sesión** con validaciones y feedback en tiempo real.
+- 💎 **Planes Premium** mensual y anual con flujo de activación.
+- 📚 **Dashboard y materias** como base de la próxima gran etapa.
+
+> Esta versión es un **prototipo funcional de frontend**: los flujos de registro, login y pago están simulados. No hay backend ni cobros reales todavía.
+
+## Cómo correrlo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) y listo. La app se muestra dentro de un marco de teléfono para vivir la experiencia móvil desde el navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Bajo el capó
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Pieza | Tecnología |
+| --- | --- |
+| Framework | Next.js 16 (App Router) |
+| UI | React 19 + Tailwind CSS 4 |
+| Componentes | shadcn/ui + Radix UI |
+| Íconos | lucide-react |
+| Lenguaje | TypeScript |
 
-## Learn More
+## Estructura rápida
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/          Páginas: bienvenida, registro, login, premium, dashboard, materias
+components/   Logo, marco de teléfono y componentes de UI
+lib/          Validaciones y utilidades
+public/       Logo y recursos estáticos
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ¿Hacia dónde vamos?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Conectar autenticación y pagos reales, construir el dashboard de guías y convertir a Academy Remember en el compañero académico que nunca olvida lo importante.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hecho con curiosidad, café y muchas ganas de aprender. ☕
+
+</div>
