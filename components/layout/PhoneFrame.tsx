@@ -3,7 +3,7 @@ import { BatteryFull, Signal, Wifi } from "lucide-react";
 
 function StatusBar() {
   return (
-    <div className="flex items-center justify-between px-7 pt-4 pb-2 text-slate-900">
+    <div className="flex items-center justify-between px-7 pt-3 pb-2 text-slate-900">
       <span className="text-sm font-semibold">9:41</span>
       <div className="flex items-center gap-1.5">
         <Signal size={15} strokeWidth={2.5} />
@@ -24,8 +24,8 @@ function HomeIndicator() {
 
 export function PhoneFrame({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-300 md:py-10">
-      <div className="relative flex h-[100dvh] w-full max-w-[430px] flex-col overflow-hidden bg-[#EEF2FB] md:h-[900px] md:max-h-[92vh] md:rounded-[3rem] md:border-[10px] md:border-slate-900 md:shadow-2xl">
+    <div className="flex min-h-screen items-center justify-center bg-slate-300 py-4">
+      <div className="relative flex h-[100dvh] w-full max-w-[430px] max-h-[92vh] flex-col overflow-hidden rounded-[3rem] border-[10px] border-slate-900 bg-[#EEF2FB] shadow-2xl">
         <StatusBar />
         <main className="min-h-0 flex-1 overflow-y-auto">{children}</main>
         <HomeIndicator />
