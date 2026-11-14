@@ -24,8 +24,8 @@ function HomeIndicator() {
 
 export function PhoneFrame({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-300 py-4">
-      <div className="relative flex h-[100dvh] w-full max-w-[430px] max-h-[92vh] flex-col overflow-hidden rounded-[3rem] border-[10px] border-slate-900 bg-[#EEF2FB] shadow-2xl">
+    <div className="flex min-h-screen items-center justify-center bg-slate-300 px-5 py-2 md:px-10 md:py-10">
+      <div className="relative flex h-[calc(100dvh-16px)] w-full max-w-[430px] flex-col overflow-hidden rounded-[3rem] border-[10px] border-slate-900 bg-[#EEF2FB] shadow-2xl md:h-[900px] md:max-h-[92vh]">
         <StatusBar />
         <main className="min-h-0 flex-1 overflow-y-auto">{children}</main>
         <HomeIndicator />
